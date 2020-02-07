@@ -1,0 +1,145 @@
+#contact_us {
+  width: 1140px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#contact_us > div {
+  top: 650px;
+  text-align: left;
+  display: grid;
+  grid-template-rows: 900px;
+  grid-template-columns: 555px 555px;
+  grid-gap: 30px;
+}
+#contact_us > div > div:first-of-type form input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fefcf9;
+  color: #cdcdcd;
+  padding-left: 19px;
+  font-size: 14px;
+  text-transform: none;
+}
+#contact_us > div > div:first-of-type form input[name="name"],
+#contact_us > div > div:first-of-type form input.heading[name="email"] {
+  width: 263px;
+  height: 49px;
+  box-sizing: border-box;
+}
+#contact_us > div > div:first-of-type form input[name="email"] {
+  margin-left: 29px;
+}
+#contact_us > div > div:first-of-type form input[name="object"] {
+  height: 49px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0;
+}
+#contact_us > div > div:first-of-type form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fefcf9;
+  padding-left: 20%;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  color: #cdcdcd;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+#contact_us > div > div:first-of-type form textarea.heading {
+  height: 200px;
+  padding: 19px;
+}
+#contact_us > div > div:first-of-type form ::-webkit-input-placeholder {
+  color: #cccccc;
+}
+#contact_us > div > div:first-of-type form ::-moz-placeholder {
+  color: #cccccc;
+}
+#contact_us > div > div:first-of-type form :-ms-input-placeholder {
+  color: #cccccc;
+}
+#contact_us > div > div:first-of-type form ::-ms-input-placeholder {
+  color: #cccccc;
+}
+#contact_us > div > div:first-of-type form ::placeholder {
+  color: #cccccc;
+}
+#contact_us > div > div:first-of-type form button {
+  width: 165px;
+  height: 50px;
+}
+#contact_us > div > div:first-of-type > div {
+  margin: 0;
+}
+#contact_us > div > div:last-of-type {
+  position: relative;
+}
+#contact_us > div > div:last-of-type iframe {
+  width: 100%;
+  height: 100%;
+}
+#contact_us > div div > p.text {
+  color: #999999;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 30px 0;
+}
+#contact_us > div div > p.text.no-line {
+  margin: 0;
+}
+#contact_us > div div > p.text.no-line:last-of-type {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#contact_us > div div > p.heading {
+  font-size: 18px;
+  margin-top: 80px;
+}
+@media all and (max-width: 1190px) {
+  #contact_us {
+    width: 555px;
+  }
+  #contact_us > div {
+    top: 550px;
+    grid-template-rows: 900px 400px;
+    grid-template-columns: 555px;
+    grid-gap: 50px;
+  }
+  #contact_us > div > div:last-of-type {
+    top: 0;
+    right: 0;
+  }
+  #contact_us > div > div:first-of-type form input[name="name"],
+  #contact_us > div > div:first-of-type form input.heading[name="email"] {
+    width: 47%;
+  }
+}
+@media all and (max-width: 600px) {
+  #contact_us {
+    width: 90vw;
+    margin-top: 50px;
+  }
+  #contact_us > div {
+    grid-template-rows: auto auto;
+    grid-template-columns: 90vw;
+    grid-gap: 3vw;
+  }
+  #contact_us > div > div:last-of-type {
+    top: 0;
+    right: 0;
+  }
+  #contact_us > div > div:last-of-type iframe {
+    width: 90vw;
+    height: auto;
+  }
+  #contact_us > div input[name="object"],
+  #contact_us > div input[name="message"] {
+    width: 90vw;
+  }
+  #contact_us > div > div:first-of-type form input[name="name"],
+  #contact_us > div > div:first-of-type form input.heading[name="email"] {
+    width: 48% !important;
+    height: 49px !important;
+    margin: 1% !important;
+  }
+}

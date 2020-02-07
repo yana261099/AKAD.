@@ -1,0 +1,273 @@
+*,
+::after,
+::before {
+  box-sizing: content-box !important;
+}
+#about_what {
+  margin-top: 150px;
+  width: 80vw;
+  text-align: left;
+}
+#about_what > div {
+  width: 48%;
+  display: inline-block;
+}
+#about_what > div:first-of-type {
+  margin-right: 33px;
+}
+#about_what div p.text:not(:last-child) {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#some_benefits {
+  position: relative;
+}
+#some_benefits > div:nth-child(2) {
+  width: 1137px;
+}
+#some_benefits > div:nth-child(2) div.grid {
+  text-align: left;
+  grid-template-columns: 357px 357px 357px;
+  grid-template-rows: 140px 140px;
+  grid-column-gap: 33px;
+  grid-row-gap: 54px;
+  top: 203px;
+}
+#some_benefits > div:nth-child(2) div.grid > div {
+  position: relative;
+}
+#some_benefits > div:nth-child(2) div.grid > div > div {
+  float: left;
+  font-size: 30px;
+  line-height: 48px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: #7beec7;
+}
+#some_benefits > div:nth-child(2) div.grid > div > div ion-icon {
+  font-size: 30px;
+}
+#some_benefits > div:nth-child(2) div.grid p.heading {
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+}
+#some_benefits > div:nth-child(2) div.grid p.text {
+  margin-top: 50px;
+}
+#team {
+  position: relative;
+}
+#team > div:last-of-type {
+  width: 1142px;
+}
+#team > div:last-of-type div.grid {
+  grid-template-rows: 333px 333px;
+  grid-template-columns: 263px 263px 263px 263px;
+  grid-gap: 30px;
+  top: 180px;
+}
+#gray {
+  width: 1080px;
+  background-color: #efeff0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 28px auto;
+}
+#gray div {
+  width: 165px;
+  height: 50px;
+  cursor: pointer;
+}
+#gray p {
+  font-size: 18px;
+  font-style: italic;
+}
+#carusel {
+  width: 100%;
+}
+#carusel > div {
+  width: 555px;
+}
+#carusel > div:first-of-type {
+  margin-right: 32px;
+  height: 250px;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
+#carusel > div:first-of-type img {
+  width: 83px;
+}
+#carusel > div:first-of-type .carousel-indicators li {
+  background-color: black;
+  width: 15px;
+  height: 5px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+#carusel > div:first-of-type .carousel-indicators li.active {
+  background-color: #7beec7;
+  width: 30px;
+}
+#carusel > div:first-of-type .carousel-caption {
+  position: relative;
+  color: black;
+  left: 0;
+}
+#carusel > div:first-of-type .carousel-caption a {
+  height: 20px;
+}
+#carusel > div:first-of-type .carousel-caption p.button {
+  line-height: 1.5;
+  padding: 3px;
+  width: 110px;
+}
+#carusel > div:last-of-type {
+  display: grid;
+  grid-template-columns: 165px 165px 165px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 30px;
+}
+#carusel > div:last-of-type div {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 165px;
+  height: 100px;
+}
+#carusel .carousel-control-next,
+#carusel .carousel-control-prev {
+  color: transparent;
+}
+@media all and (max-width: 1190px) {
+  #about_what {
+    margin-top: 50px;
+  }
+  #about_what div {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  #about_what div:first-of-type {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  #some_benefits > div:nth-child(2) {
+    width: 590px;
+  }
+  #some_benefits > div:nth-child(2) div.grid {
+    text-align: left;
+    grid-template-columns: 290px 290px;
+    grid-template-rows: 165px 165px 165px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+  #team > div:last-of-type {
+    width: 592px;
+  }
+  #team > div:last-of-type div.grid {
+    grid-gap: 5px;
+    grid-template-rows: 185px 185px;
+    grid-template-columns: 145px 145px 145px 145px;
+  }
+  #team > div:last-of-type div.grid img {
+    width: 100%;
+    height: auto;
+  }
+  #gray {
+    flex-direction: column;
+    width: 599px;
+    padding: 10px;
+    justify-content: space-around;
+  }
+  #gray p {
+    margin: 0;
+    font-size: 13px;
+  }
+  #carusel {
+    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #carusel div:first-of-type {
+    margin-right: 10px;
+  }
+}
+@media all and (max-width: 600px) {
+  #some_benefits > div:nth-child(2) {
+    width: 310px;
+  }
+  #some_benefits > div:nth-child(2) div.grid {
+    text-align: center;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+  }
+  #some_benefits > div:nth-child(2) div.grid p.heading {
+    font-size: 12px;
+    left: 50px;
+  }
+  #team > div:last-of-type {
+    width: 310px;
+  }
+  #team > div:last-of-type div.grid {
+    grid-gap: 5px;
+    grid-template-rows: 127px 185px;
+    grid-template-columns: 100px 100px 100px;
+  }
+  #team > div:last-of-type div.grid img {
+    width: 100%;
+    height: auto;
+  }
+  #team > div:last-of-type div.grid img:nth-child(7),
+  #team > div:last-of-type div.grid img:nth-child(8) {
+    display: none;
+  }
+  #gray {
+    margin-top: 0;
+    width: 260px;
+    padding: 30px;
+  }
+  #gray div {
+    width: 165px;
+    height: 50px;
+    cursor: pointer;
+  }
+  #gray p {
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+  }
+  #carusel {
+    margin-bottom: 30px;
+  }
+  #carusel > div {
+    width: 310px;
+  }
+  #carusel > div:first-of-type {
+    display: none;
+  }
+  #carusel > div:last-of-type {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 115px 115px 115px;
+    grid-gap: 10px;
+  }
+  #carusel > div:last-of-type div {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 150px;
+    height: 115px;
+  }
+  #carusel > div:last-of-type div img {
+    width: 80%;
+    height: auto;
+  }
+  #carusel > div:last-of-type div img:first-of-type {
+    width: 65%;
+    height: auto;
+  }
+}
